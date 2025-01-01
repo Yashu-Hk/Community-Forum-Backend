@@ -1,0 +1,12 @@
+Relationships Between Schemas
+User and Post:
+Each post is authored by a user (author field in the Post schema).
+The author field in Post references the User schema.
+
+Post and Comment:
+Each comment belongs to a specific post (post field in the Comment schema).
+The comments array in the Post schema stores references to Comment documents.
+
+User and Comment:
+Each comment is authored by a user (author field in the Comment schema).
+
